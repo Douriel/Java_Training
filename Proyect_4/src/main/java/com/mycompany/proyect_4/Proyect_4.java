@@ -31,15 +31,23 @@ public class Proyect_4 {
         List<Office> offices = new ArrayList();
         offices.add(new Office());
         offices.add(new Office());
+        
+        build(offices);
+        
+        addAnOffice(buildings);
     }
     
     static void build(Building building){
         System.out.println("Constructing a new " + building.toString());
     }
     
-    static void build(List<Building> buildings){
+    static void build(List<? extends Building> buildings){
         for(Building i : buildings){
             System.out.println(i);
         }
+    }
+    
+    static void addAnOffice(List<? super Office> offices){
+        offices.add(new Office());
     }
 }
