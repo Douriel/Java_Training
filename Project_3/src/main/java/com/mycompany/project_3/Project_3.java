@@ -22,13 +22,9 @@ public class Project_3 {
         printShoppingList(items);
     }
     
-    private static void printShoppingList(String string1, String string2){
-        System.out.println("SHOPPING LIST");
-        System.out.println("1. " + string1);
-        System.out.println("2. " + string2);
-    }
+
     
-    private static void printShoppingList(String[] items){
+        private static void printShoppingList(String... items){
         System.out.println("SHOPPING LIST");
         for(String i: items){
             System.out.println(i);
