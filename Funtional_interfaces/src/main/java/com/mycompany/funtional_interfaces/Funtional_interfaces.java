@@ -20,5 +20,15 @@ public class Funtional_interfaces {
             }
         };
         gm.greet("Luis");
+        
+         GreetingMessage gm2 = (String name) -> {
+                System.out.println("Hello "+ name);             
+         };
+         gm2.greet("Manuel");
+         
+         MessagePrinter mp = () -> {
+             System.out.println("This is a message");
+         };
+         mp.printMessage();
     }
 }
