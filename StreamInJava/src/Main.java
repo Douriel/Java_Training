@@ -5,7 +5,9 @@ public class Main {
         ArrayList<Book> books = populateLibrary();
 
         books.stream().filter(book -> {
-            return book.getAuthor().startsWith("O");
+            return book.getAuthor().startsWith("J");
+        }).filter(book -> {
+            return book.getTitle().startsWith("L");
         }).forEach(System.out::println);
     }
 
