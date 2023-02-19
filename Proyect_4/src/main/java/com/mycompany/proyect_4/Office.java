@@ -11,7 +11,7 @@ package com.mycompany.proyect_4;
 public class Office extends Building {
     @Override
     public String toString(){
-        
+        int d;
         int i;
         return "office";
     }
